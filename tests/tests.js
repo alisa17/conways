@@ -31,3 +31,15 @@ test('create a thing that is true a specified percentage of times', function(t) 
     t.true(actual < expectedMaximum)
     t.end()
 })
+
+
+test('able to birth array of specified size and percentage', function(t) {
+    var size = 100
+    var percentage = 0.4
+    var expectedMaximum = 50
+    var actual = game.birthArray(size, percentage).reduce(function(a, b) {
+      return  a + b
+    }, 0)
+    t.true(actual < expectedMaximum)
+    t.end()
+})
