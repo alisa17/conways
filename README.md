@@ -35,3 +35,26 @@ test('test setup working', function (t) {
   t.pass()
   t.end()
 })
+
+
+2 ways to create a 2D array of specified size:
+
+for loops:
+// function createBoard(size) {
+//     var arr = []
+//     for (var i = 0; i < size; i++) {
+//       arr.push([])
+//       for (var j = 0; j < size; j++) {
+//         arr[i].push(0)
+//       }
+//     }
+//     return arr
+// }
+
+array methods:
+
+function createBoard(size) {
+    return Array(size).fill([]).map(function() {
+        return Array(size).fill(0)
+    })
+}
