@@ -52,6 +52,7 @@ for loops:
 // }
 
 array methods:
+below doesn't work for this project because of true and false requirements but still is cool
 
 function createBoard(size) {
     return Array(size).fill([]).map(function() {
