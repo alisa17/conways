@@ -3,6 +3,4 @@ function isOutOfBounds(x, y, size) {
 }
 
 
-module.exports = {
-    isOutOfBounds
-}
+module.exports = isOutOfBounds

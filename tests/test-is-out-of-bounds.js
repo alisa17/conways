@@ -13,7 +13,7 @@ test('able to identify if cell is out of bounds', function(t) {
     var x = 7
     var y = 3
     var expected = false
-    var actual = isOutOfBounds.isOutOfBounds(x, y, size)
+    var actual = isOutOfBounds(x, y, size)
     t.equal(actual, expected)
     t.end()
 })

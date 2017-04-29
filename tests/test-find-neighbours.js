@@ -20,7 +20,24 @@ test("Able to identify middle cell's neighbours' coordinates", function(t) {
         [57, 83]
     ]
 
-    var actual = findNeigbours.findNeigbours(x, y)
+    var actual = findNeigbours(x, y)
+    t.deepEqual(actual, expected)
+    t.end()
+})
+
+
+test("Able to identify side cell's neighbours' coordinates", function(t) {
+    var x = 0
+    var y = 82
+    var size = 100
+    var expected = [
+        [0, 81],
+        [0, 83],
+        [1, 81],
+        [1, 82],
+        [1, 83]
+    ]
+    var actual = findNeigbours(x, y, size)
     t.deepEqual(actual, expected)
     t.end()
 })
