@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tape 'tests/test-find-neighbours.js' | tap-spec"
+    "test": "tape 'tests/test-count-living-neighbours.js' | tap-spec"
   },
   "repository": {
     "type": "git",
